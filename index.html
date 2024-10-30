@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery - Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar" id="navBar">
+            <a href=""><img src="img/logo.png" class="logo"></a>
+            <ul class="navlinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#category">category</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+
+            <a href="" class="navbtn"><img src="img/cart.png" class="carticon">Cart</a> 
+            <img src="img/menu.png" class="menuicon" onclick="menutoggle()">
+        </nav>
+
+
+        <div class="container">
+            <div class="loginform">
+              <form action="" class="formbox">
+                <h2>LOGIN</h2>
+                <div class="shortlinks">
+                    <a href="" class="fbk"><img src="img/facebbok.png" class="navimg"><p>facebook</p></a>
+                    <a href="" class="twt"><img src="img/twitter.png" class="navimg"><p>twitter</p></a>  
+                </div>
+                <input type="email" placeholder="enter your email" class="log">
+                <input type="password" placeholder="enter your password" class="log">
+                <input type="submit" value="login" class="logbtn">
+                <p class="logpass">Don't Have An Account? <a href="">Sign Up</a></p>
+                <p class="logpass">Forgot Password? <a href="">Click Here</a></p>
+              </form>
+            </div>
+        </div>
+    </header>
+
+
+<!-- ---------------------FOOTER--------------------------------->
+
+<footer id="contact">
+    <p class="copyright footright">copyright - &copy; Ezzie Designs 2024</p>
+</footer>
+
+
+
+<!-- --------------JAVASCRIPT------------------------- -->
+
+
+    <script>
+        var navbaR = document.getElementById("navBar");
+
+        function menutoggle() {
+            navbaR.classList.toggle("hidemenu");
+        }
+
+    </script>
+</body>
+</html>
